@@ -1,0 +1,28 @@
+{
+  "workbench.editor.enablePreview": false, //打开文件不覆盖
+  "search.followSymlinks": false, //关闭rg.exe进程
+  "editor.minimap.enabled": false, //关闭快速预览
+  "files.autoSave": "afterDelay", //打开自动保存
+  "editor.lineNumbers": "on", //开启行数提示
+  "editor.quickSuggestions": {
+    //开启自动显示建议
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.tabSize": 2, //制表符符号eslint
+  "editor.formatOnSave": true, //每次保存自动格式化
+  "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
+  "prettier.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "css.validate": true,
+  "less.validate": true,
+  "scss.validate": true
+}

@@ -1,0 +1,138 @@
+@backgroundblack: #131313 100%;
+@fontColor: #fff;
+@fontSize: 20px;
+@backgroundblack: #131313 100%;
+@margin: 24px;
+@borderBottom: 2px solid #57a6af;
+.logo {
+	height: 60px;
+}
+.cursor {
+	cursor: pointer;
+}
+.layLoat-head {
+	width: 100%;
+	height: 64px;
+	background: @backgroundblack;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.layLoat-left {
+		height: 64px;
+		color: @fontColor;
+		font-size: @fontSize;
+		margin-left: @margin;
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		line-height: 64px;
+
+		.layLoat-leftChild {
+			line-height: 64px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		.layLoat-rightChild {
+			cursor: pointer;
+			font-size: 20px;
+		}
+
+		.layLoat-leftChild:after {
+			content: "";
+			// display: inline-block;
+			// width: 2px;
+			// height: 18px;
+			// background: #fff;
+			// margin: -2px 14px;
+		}
+	}
+
+	.layLoat-center {
+		// margin-right: auto;
+		margin-left: 52px;
+
+		a {
+			font-size: 16px;
+		}
+
+		.headRoutes {
+			display: inline-block;
+			height: 63px;
+			line-height: 63px;
+			margin: 0 28px;
+		}
+	}
+
+	.layLoat-right {
+		color: @fontColor;
+		margin-right: @margin;
+
+		li {
+			border-bottom: 0 !important;
+
+			i {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.layLoat-center .active {
+	display: inline-block;
+	line-height: 63px;
+	height: 63px;
+	margin: 0 28px;
+	border-bottom: 2px solid #57a6af;
+}
+.z_menu.ant-menu-submenu-popup {
+	width: 100%;
+	.ant-menu-hidden {
+		display: none !important;
+	}
+}
+.z_menu.ant-menu-submenu-popup .ant-menu {
+	border-radius: 0;
+	display: flex;
+	height: auto;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: #21232b;
+}
+.layLoat-center .ant-menu-item-selected {
+	background: none !important;
+	border-bottom: 2px solid #57a6af !important;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+	background: none !important;
+	border-bottom: 2px solid #57a6af !important;
+}
+.layLoat-center .ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+	color: #1890ff !important;
+}
+.app-wrap {
+	display: flex;
+	height: calc(100% - 10.7%);
+	.app-left {
+		width: 300px;
+	}
+}
+.chiildren-component {
+	display: contents;
+}
+.footer-w{
+	background-color: #333;
+	.footer{
+		width: 400px;
+		margin: 0 auto;
+		height: 40px;
+		line-height: 50px;
+	}
+}
+

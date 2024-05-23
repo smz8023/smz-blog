@@ -1,0 +1,119 @@
+.z_modal_vioce {
+  min-height: 441px;
+  max-height: 441px;
+  border: 1px solid #ddd;
+  // display: flex;
+  overflow: auto;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.z_modal_vioce_left::-webkit-scrollbar {
+  width: 8px;
+}
+.z_modal_vioce_p1 {
+  background: #f4f4f4;
+  cursor: pointer;
+
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0;
+  line-height: 32px;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.38);
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.z_modal_vioce_left::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+.z_modal_vioce_left::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 10px;
+  // background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ddd;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.z_modal_vioce_right::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.z_modal_vioce_right::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+.z_modal_vioce_right::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 10px;
+  // background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ddd;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+.scrollbar::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 10px;
+  // background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ddd;
+}
+.z_modal_vioce_left {
+  width: 240px;
+  max-height: 441px;
+  overflow: auto;
+  border-right: 1px solid #ddd;
+}
+.z_modal_vioce_right {
+  width: 100%;
+  max-height: 441px;
+  overflow: auto;
+}
+.z_modal_vioce_p {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0;
+  line-height: 32px;
+  padding: 8px;
+  cursor: pointer;
+}
+.z_modal_vioce_p:hover {
+  background: rgba(87, 166, 175, 0.1);
+}
+.z_modal_vioce_library_p {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  line-height: 32px;
+  padding: 8px;
+  padding-left: 43px;
+  cursor: pointer;
+}
+.z_modal_vioce_library_p:hover {
+  background: rgba(87, 166, 175, 0.1);
+  color: rgba(0, 0, 0, 0.9);
+}
+.left {
+  display: flex;
+}
+.children {
+  position: absolute;
+  width: 64%;
+  left: 265px;
+  top: 79px;
+}
+.loading {
+  position: absolute;
+  top: 0;
+}

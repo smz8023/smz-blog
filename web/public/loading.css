@@ -1,0 +1,102 @@
+html{
+  flex: 1;
+  height: 100%;
+  
+}
+.loading_w{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+}
+.load{
+  color:#fff;
+  margin-left: 50%;
+  position: absolute;
+}
+.loadingWrap {
+  margin: 0;
+  overflow: hidden;
+  flex: 1;
+
+  height: 100%;
+  background: #b993d6;
+  background: -webkit-linear-gradient(to left, #8ca6db, #b993d6);
+  background: linear-gradient(to left, #8ca6db, #b993d6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+body{
+  margin: 0;
+  flex:1;
+  height: 100%;
+}
+.spinner {
+  margin: 100px auto;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  text-align: center;
+
+  -webkit-animation: rotate 2s infinite linear;
+  animation: rotate 2s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  border-radius: 100%;
+
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
