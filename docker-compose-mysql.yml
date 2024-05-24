@@ -14,7 +14,6 @@ services:
     image: "docker.io/mysql:latest"
     restart: always
     volumes:
-      - "./conf/my.cnf:/etc/my.cnf"
       - /etc/localtime:/etc/localtime
       - /etc/timezone:/etc/timezone
     ports:
