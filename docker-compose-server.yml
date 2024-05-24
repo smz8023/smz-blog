@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+  app-pm2:
+    container_name: app-pm2
+    build: ./blogsever
+    volumes:
+      - ./blogsever:/usr/src/app 
+    ports:
+      - 3003:3003

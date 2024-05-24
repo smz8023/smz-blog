@@ -1,0 +1,21 @@
+version: "3.1"
+services:
+  redis:
+    image: redis
+    restart: always
+    command: redis-server --requirepass smz8023XXJ
+    ports:
+      - 6379:6379
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: "smz8023XXJ"
+      MYSQL_USER: "test"
+      MYSQL_PASS: "smz8023smz"
+    image: "docker.io/mysql:latest"
+    restart: always
+    volumes:
+      - "./conf/my.cnf:/etc/my.cnf"
+      - /etc/localtime:/etc/localtime
+      - /etc/timezone:/etc/timezone
+    ports:
+      - "3306:3306"
