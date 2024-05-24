@@ -9,4 +9,4 @@ services:
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d
       - ./nginx/ssl:/etc/nginx/cert
-      - ./build:/var/www/html/
+      - ./web/build:/var/www/html/
