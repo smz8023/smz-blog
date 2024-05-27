@@ -135,7 +135,7 @@ class Login extends Component {
         <div className="login">
           <div className="login-center">
             <div className="login-title">
-              <p className="login-title-p">GitHub 账号登录</p>
+              <p className="login-title-p">GitHub 账号登录 jenkins 发布</p>
               <img
                 onClick={() => {
                   this.login();
